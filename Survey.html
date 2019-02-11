@@ -1,0 +1,133 @@
+<!DOCTYPE.html>
+<html>
+<head>
+  <title>
+    Survey Form
+  </title>
+  <style>
+  body{
+    background-color: #999999;
+    text-align: left;
+  }
+    #title-div {
+      text-align: center;
+      }
+    #form-container {
+      background-color: white;
+      max-width: 50vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 7px;
+      position: flex;
+      justify-content: flex-start;
+      /*text-align: right;*/
+
+    }
+    #description-div {
+      text-align: center;
+    }
+    #survey-form {
+      max-width:50vw;
+    }
+  /*  input, select {
+      justify-content: flex-end;
+      margin-top:5px;
+      margin-bottom: 5px;
+      margin-right: 30%;
+      margin-left: 30px;
+    }
+  */
+    .box-field {
+      /*justify-content: flex-end;*/
+      margin-top:5px;
+      margin-bottom: 5px;
+      margin-right: 5%;
+    }
+
+    .box-field-label {
+      margin-left:30%;
+    }
+    .radio-checkbox-div{
+      margin-left:30%;
+      text-align:left;
+    }
+    #first-radio{
+    }
+    #name {
+      margin-left: 56px;
+    }
+    #email {
+      margin-left: 86px;
+    }
+    #Number {
+      margin-left: 70px;
+    }
+    #dropdown {
+      margin-left: 7px;
+    }
+    #submit {
+      margin-left:30%;
+      margin-top:10px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="title-div">
+    <h1 id="title">A-a-r-d vark Adventure Video Game Survey</h1>
+  </div>
+  <div id="form-container">
+  <div id="description-div">
+    <p id="description">Please fill out this form and submit. Your feedback is appreciated!</p>
+  </div>
+
+    <form id="survey-form">
+      <label class="box-field-label" id="name-label" for="name">
+        Full Name </label><input class="box-field" type="text" id="name" placeholder="Jane Read" required><br>
+
+      <label class="box-field-label" id="email-label" for="email">
+        Email <input class="box-field" type="email" id ="email" placeholder="JRead999@pbs.com" pattern=".+@gmail.com" title="Format must be ****@domain.com" required><br>
+      </label>
+
+      <label class="box-field-label" id="number-label" for="number">
+        Number <input class="box-field" type="number" id="number" required title="min = 0 max = 99" min="0" max="99" placeholder="0-99"><br>
+      </label>
+
+      <label class="box-field-label" for="dropdown">
+        Characters played</label>
+        <select class="box-field" id="dropdown">
+          <option value="Arthur">Arthur</option>
+          <option value="Buster">Buster</option>
+          <option value="Francine">Francine</option>
+          <option value="D.W.">D.W.</option>
+        </select>
+      <div class="radio-checkbox-div">
+        <label for="Age">Player Age</label><br>
+          <input value="0 - 12" type="radio" name="Age" checked>0 - 12<br>
+          <input value="13 - 17" type="radio" name="Age">13 - 17<br>
+          <input value="18 or older" type="radio" name="Age">18 or older<br>
+      </div>
+      <br>
+      <div class="radio-checkbox-div">
+      <label for="enemies">Challenging Enemy Characters<br>
+        <input type="checkbox" name="enemies" value="Mr Haney">Mr Haney<br>
+        <input type="checkbox" name="enemies" value="Mr Ratburn">Mr Ratburn<br>
+        <input type="checkbox" name="enemies" value="Mrs McGrady">Mrs McGrady<br>
+      </div>
+      <br>
+      <div id="additional-comment" class="radio-checkbox-div">
+        <label id="textarea-label" for="textarea">Additional Comments</label><br>
+        <textarea name="textarea" rows="4" cols="50" placeholder="For that's the place to start..."></textarea>
+      </div>
+      <div id="button">
+        <input id="submit" type="submit" value="And I say 'Hey!'">
+      </div>
+      <br>
+    </form>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
